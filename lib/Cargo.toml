@@ -1,0 +1,13 @@
+[package]
+name = "clapper"
+version = "0.1.0"
+edition = "2024"
+description = "Opinionated command-line utility library"
+license = "MIT OR Apache-2.0"
+authors = ["Sean Bruton <sean@seanbruton.dev>"]
+repository = "https://github.com/sbruton/clapper"
+
+[dependencies]
+clap = { version = "4.5.32", features = ["derive"] }
+clapper-macro = { path = "../macro", version = "0.1.0" }
+ctrlc = "3.4.5"

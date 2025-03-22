@@ -1,0 +1,15 @@
+[package]
+name = "clapper-macro"
+version = "0.1.0"
+edition = "2024"
+description = "Macros for an opinionated command-line utility library"
+license = "MIT OR Apache-2.0"
+authors = ["Sean Bruton <sean@seanbruton.dev>"]
+repository = "https://github.com/sbruton/clapper"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.40"
+syn = { version = "2.0.100", features = ["full"] }
