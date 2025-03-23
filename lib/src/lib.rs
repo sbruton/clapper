@@ -8,7 +8,7 @@ pub trait ClapperError: std::error::Error {
 pub type ClapperResult<E> = std::result::Result<(), E>;
 
 pub mod prelude {
-    pub use clap::{self, ArgGroup, Parser as ArgParser};
+    pub use clap::{self, ArgAction, ArgGroup, Parser as ArgParser};
     pub use ctrlc;
 
     pub use super::ClapperError;
